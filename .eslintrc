@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [],
+  "rules": {
+    "semi": ["warn", "never"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-no-duplicate-props": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "16.9"
+    }
+  }
+}

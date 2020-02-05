@@ -1,0 +1,62 @@
+{
+  "name": "react-devreach",
+  "version": "1.0.0",
+  "description": "React project for devreach workshop",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "lint": "eslint app --ext .js,.jsx",
+    "lint:fix": "eslint --fix app --ext .js,.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric S. Bishard",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "eslint-watch": "^6.0.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@progress/kendo-drawing": "^1.6.0",
+    "@progress/kendo-react-buttons": "^3.4.1",
+    "@progress/kendo-react-inputs": "^3.4.1",
+    "@progress/kendo-react-intl": "^3.4.1",
+    "@progress/kendo-theme-material": "^3.3.4",
+    "cldr-core": "^35.1.0",
+    "cldr-dates-full": "^35.1.0",
+    "cldr-numbers-full": "^35.1.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-media-hook": "^0.4.4",
+    "react-router-dom": "^5.0.1",
+    "simple-flexbox": "^2.3.0"
+  }
+}
