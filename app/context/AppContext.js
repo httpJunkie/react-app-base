@@ -12,7 +12,7 @@ const AppProvider = props => {
       { ...data, navOpen: value }
     )),
 
-    theme: localStorage.getItem('kendo_theme') || preferredTheme,
+    theme: localStorage.getItem('spaceXLaunchApp_theme') || preferredTheme,
     changeTheme: mode => setApp(data => (
       {...data, theme: mode }
     ))
@@ -20,7 +20,7 @@ const AppProvider = props => {
   })
 
   useEffect(() => {
-    localStorage.setItem('kendo_theme', appData.theme)
+    localStorage.setItem('spaceXLaunchApp_theme', appData.theme)
     }, [appData.theme]
   )
   
