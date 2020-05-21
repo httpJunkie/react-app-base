@@ -57,6 +57,7 @@
     "react-dom": "^16.13.1",
     "react-media-hook": "^0.4.7",
     "react-router-dom": "^5.2.0",
+    "recoil": "0.0.7",
     "simple-flexbox": "^2.3.1"
   }
 }
