@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 import './About.scss'
 
 const About = (props) => {
   document.title = `Delete Me`
-  const isLight = props.theme === "light"
+  const isLight = props.theme === 'light'
 
   return (
     <>

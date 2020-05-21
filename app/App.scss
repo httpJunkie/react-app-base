@@ -1,7 +1,7 @@
 .app-container {
   display: flex;
   height: 100vh;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -120,8 +120,8 @@ footer {
   }
 
   /* Kendo material Light*/
-  @import "/sass-themes/blue-pink-light/all.scss";
-  @import "/sass-themes/blue-pink-light/variables.scss";
+  @import '/sass-themes/blue-pink-light/all.scss';
+  @import '/sass-themes/blue-pink-light/variables.scss';
 }
 
 /* Dark Theme */
@@ -147,6 +147,6 @@ footer {
   }
 
   /* Kendo material dark*/
-  @import "./sass-themes/cyan-amber-dark/all.scss";
-  @import "./sass-themes/cyan-amber-dark/variables.scss";
+  @import './sass-themes/cyan-amber-dark/all.scss';
+  @import './sass-themes/cyan-amber-dark/variables.scss';
 }

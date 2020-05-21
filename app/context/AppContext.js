@@ -1,10 +1,10 @@
-import React, { useState, useEffect, createContext } from "react"
-import { useMediaPredicate } from "react-media-hook"
+import React, { useState, useEffect, createContext } from 'react'
+import { useMediaPredicate } from 'react-media-hook'
 
 const AppContext = createContext()
 
 const AppProvider = props => {
-  const preferredTheme = useMediaPredicate("(prefers-color-scheme: dark)") ? "dark" : "light"
+  const preferredTheme = useMediaPredicate('(prefers-color-scheme: dark)') ? 'dark' : 'light'
   const [appData, setApp] = useState({
 
     navOpen: false,

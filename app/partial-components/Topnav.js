@@ -5,7 +5,7 @@ import Menu from './Menu'
 
 const Topnav = () => {
   return (
-    <div className={`topnav`}>
+    <div className={'topnav'}>
       <Menu />
     </div>
   )
