@@ -6,24 +6,17 @@ const AppContext = createContext()
 const AppProvider = props => {
   const preferredTheme = useMediaPredicate("(prefers-color-scheme: dark)") ? "dark" : "light"
   const [appData, setApp] = useState({
+
     navOpen: false,
     toggleSidenav: value => setApp(data => (
       { ...data, navOpen: value }
     )),
+
     theme: localStorage.getItem('kendo_theme') || preferredTheme,
     changeTheme: mode => setApp(data => (
       {...data, theme: mode }
-    )),
-    locale: { code: "en-US" },
-    availableLocales: [
-      { code: "en-US" },
-      { code: "de-DE" },
-      { code: "es-ES" },
-      { code: "zh-CN" }
-    ],
-    changeLocale: locale => setApp(data => (
-      {...data, locale: locale }
     ))
+    
   })
 
   useEffect(() => {

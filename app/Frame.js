@@ -4,14 +4,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { useMediaPredicate } from "react-media-hook"
 
 const Home = lazy(() => import('./view-components/Home'))
-const Todos = lazy(() => import('./view-components/About'))
+const About = lazy(() => import('./view-components/About'))
 const LoadingMessage = () => `loading...`
 
 import Logo from "./partial-components/Logo"
 import Sidenav from "./partial-components/Sidenav"
 import Topnav from "./partial-components/Topnav"
 import Foot from "./partial-components/Foot"
-import About from "./view-components/About"
 
 const Frame = () => {
   const context = useContext(AppContext)
