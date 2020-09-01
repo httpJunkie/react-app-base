@@ -12,7 +12,7 @@ const AppProvider = props => {
       { ...data, navOpen: value }
     )),
 
-    theme: localStorage.getItem('spaceXLaunchApp_theme') || preferredTheme,
+    theme: localStorage.getItem('react-starter-theme') || preferredTheme,
     changeTheme: mode => setApp(data => (
       {...data, theme: mode }
     ))
@@ -20,7 +20,7 @@ const AppProvider = props => {
   })
 
   useEffect(() => {
-    localStorage.setItem('spaceXLaunchApp_theme', appData.theme)
+    localStorage.setItem('react-starter-theme', appData.theme)
     }, [appData.theme]
   )
   

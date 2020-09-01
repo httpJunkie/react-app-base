@@ -3,9 +3,6 @@ import { AppContext } from '../context/AppContext'
 import { Column, Row } from 'simple-flexbox'
 import { Switch } from '@progress/kendo-react-inputs'
 
-// import lightImage from '../public/images/kendokaImage_light.png'
-// import darkImage from '../public/images/kendokaImage_dark.png'
-
 const Foot = () => {
   const context = useContext(AppContext)
   const isLight = context.theme === 'light'
